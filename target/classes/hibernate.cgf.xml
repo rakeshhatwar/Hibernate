@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateAssignment</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.import_files">import.sql</property>
+		<property name="hbm2ddl.auto">update</property>
+        
+        <mapping class="hibernate.HibernateAssignment.topic1.entity.EmployeeEntity"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic1.entity.ProductEntity"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic2.entity.EmployeeManagementEntity"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic2.entity.ABCCompanyEmployeeEntity"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic2.entity.EmployeeLogTabEntity"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic3.entity.Question"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic3.entity.MultiOptions"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic3.entity.Continent"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic3.entity.Capital"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic3.entity.Country"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic3.entity.Album"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic4.entity.Department"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic4.entity.Employee"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic4.entity.EmployeeIdentity"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic4.entity.Passport"></mapping>
+        <mapping class="hibernate.HibernateAssignment.topic4.entity.Student" />
+        <mapping class="hibernate.HibernateAssignment.topic4.entity.Course" />
+        <mapping class="hibernate.HibernateAssignment.topic5.entity.Car" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.EmployeeTopic6_Ass1" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.RegularEmployee6_Ass1" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.ContractEmployee6_Ass1" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.EmployeeTopic6_Ass2" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.RegularEmployee6_Ass2" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.ContractEmployee6_Ass2" />
+                <mapping class="hibernate.HibernateAssignment.topic6.entity.EmployeeTopic6_Ass3" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.RegularEmployee6_Ass3" />
+        <mapping class="hibernate.HibernateAssignment.topic6.entity.ContractEmployee6_Ass3" />
+        
+    </session-factory>
+    
+</hibernate-configuration>
